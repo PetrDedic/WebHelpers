@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 200vh;
+  background-image: linear-gradient(to right, #13161d, #0f1015);
+  scroll-behavior: smooth;
+}
+
+.scroll-button {
+  opacity: 0;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: #167716;
+  transition: 250ms;
+  cursor: pointer;
+}
+.scroll-button i {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 4rem;
+  width: 4rem;
+  font-size: 32px;
+  color: #c2ccc6;
+  transition: 250ms;
+}
+.scroll-button i:hover {
+  transform: scale(1.15);
+  transition: 250ms;
+}
+.scroll-button:hover {
+  background: #1b9b1b;
+  transition: 250ms;
+}
+
+.show {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
