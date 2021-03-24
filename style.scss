@@ -1,3 +1,8 @@
+$primary-color: #1b9b1b;
+$primary-text: #c2ccc6;
+$background-color: #14171d;
+$muted-color: #5f626d;
+
 * {
   padding: 0;
   margin: 0;
@@ -17,7 +22,7 @@ body {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background: #167716;
+  background: $primary-color;
   transition: 250ms;
   cursor: pointer;
 
@@ -27,7 +32,7 @@ body {
     line-height: 4rem;
     width: 4rem;
     font-size: 32px;
-    color: #c2ccc6;
+    color: $primary-text;
     transition: 250ms;
 
     &:hover {
@@ -37,11 +42,143 @@ body {
   }
 
   &:hover {
-    background: #1b9b1b;
+    background: #22c022;
     transition: 250ms;
   }
 }
 
 .show {
   opacity: 1;
+}
+
+.action-button {
+  position: fixed;
+  bottom: 50%;
+  right: 1rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: $primary-color;
+  border: #126312 solid 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+
+  i {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    font-size: 48px;
+    color: $primary-text;
+    transition: 250ms;
+  }
+
+  &:hover {
+    background: #22c022;
+    transition: 250ms;
+  }
+}
+
+.active {
+  transform: rotate(45deg);
+  transition: 250ms;
+  background-color: rgb(37, 37, 37);
+  border: rgb(51, 50, 50) solid 5px;
+
+  &:hover {
+    background: rgb(80, 79, 79);
+    transition: 250ms;
+  }
+}
+
+.menu-item {
+  transition: 250ms;
+  position: fixed;
+  bottom: 50%;
+  right: 1.25rem;
+  width: 4rem;
+  height: 4rem;
+  background: $primary-color;
+  border: #126312 solid 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 4;
+
+  i {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 4rem;
+    width: 4rem;
+    font-size: 36px;
+    color: $primary-text;
+    transition: 250ms;
+  }
+
+  &:hover {
+    background: #22c022;
+    transition: 250ms;
+  }
+}
+
+.menu-item1 {
+  &.shown {
+    right: 6rem;
+    bottom: 62.5%;
+    transition: 250ms;
+  }
+}
+
+.menu-item2 {
+  &.shown {
+    right: 8rem;
+    bottom: 50%;
+    transition: 250ms;
+  }
+}
+
+.menu-item3 {
+  &.shown {
+    right: 6rem;
+    bottom: 37.5%;
+    transition: 250ms;
+  }
+}
+
+.active2 {
+  transition: 250ms;
+  background-color: rgb(37, 37, 37);
+  border: rgb(51, 50, 50) solid 5px;
+
+  &:hover {
+    background: rgb(80, 79, 79);
+    transition: 250ms;
+  }
+}
+
+.menu-item31 {
+  z-index: 3;
+  opacity: 0;
+  right: 6rem;
+  bottom: 37.5%;
+  transition: 250ms;
+
+  &.shown {
+    opacity: 1;
+    right: 9.5rem;
+    bottom: 27.5%;
+  }
+}
+
+.menu-item32 {
+  z-index: 3;
+  opacity: 0;
+  right: 6rem;
+  bottom: 37.5%;
+  transition: 250ms;
+
+  &.shown {
+    opacity: 1;
+    right: 2.5rem;
+    bottom: 27.5%;
+  }
 }
